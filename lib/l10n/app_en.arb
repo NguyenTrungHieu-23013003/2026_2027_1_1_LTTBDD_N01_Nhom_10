@@ -1,0 +1,41 @@
+{
+  "@@locale": "en",
+  "appName": "WordTH",
+  "tagline": "Learn vocabulary every day",
+  "tabHome": "Home",
+  "tabStats": "Stats",
+  "tabFavorites": "Favorites",
+  "tabSettings": "Settings",
+  "greeting": "Hello, {name}!",
+  "@greeting": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "progressTitle": "Today's progress",
+  "progressEncourage": "You're doing great!",
+  "continueLearning": "Continue learning",
+  "wordUnit": "words",
+  "searchHint": "Search vocabulary...",
+  "searchNoResult": "No results found",
+  "wordSetsTitle": "Word sets",
+  "setsCount": "{count} sets",
+  "@setsCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "wordsCount": "{count} words",
+  "@wordsCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "statsTitle": "Statistics",
+  "favoritesTitle": "Favorite words",
+  "favoritesEmpty": "No words yet",
+  "settingsTitle": "Settings",
+  "languageTitle": "Language",
+  "languageVi": "Tiếng Việt",
+  "languageEn": "English"
+}

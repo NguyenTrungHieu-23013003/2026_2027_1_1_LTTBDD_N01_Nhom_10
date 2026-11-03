@@ -1,0 +1,41 @@
+{
+  "@@locale": "vi",
+  "appName": "WordTH",
+  "tagline": "Học từ vựng mỗi ngày",
+  "tabHome": "Trang chủ",
+  "tabStats": "Thống kê",
+  "tabFavorites": "Yêu thích",
+  "tabSettings": "Cài đặt",
+  "greeting": "Xin chào, {name}!",
+  "@greeting": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "progressTitle": "Tiến độ hôm nay",
+  "progressEncourage": "Bạn đang làm rất tốt!",
+  "continueLearning": "Tiếp tục học",
+  "wordUnit": "từ",
+  "searchHint": "Tìm từ vựng...",
+  "searchNoResult": "Không tìm thấy kết quả",
+  "wordSetsTitle": "Bộ từ vựng",
+  "setsCount": "{count} bộ từ",
+  "@setsCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "wordsCount": "{count} từ",
+  "@wordsCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "statsTitle": "Thống kê",
+  "favoritesTitle": "Từ yêu thích",
+  "favoritesEmpty": "Chưa có từ nào",
+  "settingsTitle": "Cài đặt",
+  "languageTitle": "Ngôn ngữ",
+  "languageVi": "Tiếng Việt",
+  "languageEn": "English"
+}
