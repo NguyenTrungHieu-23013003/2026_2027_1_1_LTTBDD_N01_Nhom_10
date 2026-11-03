@@ -41,8 +41,8 @@ class AppState extends ChangeNotifier {
 
   // ---------- Truy vấn ----------
   List<Word> get favorites => [
-        for (final s in sets) ...s.words.where((w) => w.isFavorite),
-      ];
+    for (final s in sets) ...s.words.where((w) => w.isFavorite),
+  ];
 
   int get totalLearned => sets.fold(0, (sum, s) => sum + s.learnedCount);
 
@@ -61,16 +61,26 @@ class AppState extends ChangeNotifier {
     return null;
   }
 
+  /// Bộ từ chứa [word], dùng để hiện tên bộ từ trong kết quả tìm kiếm.
+  WordSet? setOfWord(Word word) {
+    for (final s in sets) {
+      if (s.words.contains(word)) return s;
+    }
+    return null;
+  }
+
   /// Tìm theo từ tiếng Anh hoặc nghĩa (cả tiếng Việt và tiếng Anh).
   List<Word> search(String keyword) {
     final q = keyword.trim().toLowerCase();
     if (q.isEmpty) return [];
     return [
       for (final s in sets)
-        ...s.words.where((w) =>
-            w.term.toLowerCase().contains(q) ||
-            w.meaningVi.toLowerCase().contains(q) ||
-            w.meaningEn.toLowerCase().contains(q)),
+        ...s.words.where(
+          (w) =>
+              w.term.toLowerCase().contains(q) ||
+              w.meaningVi.toLowerCase().contains(q) ||
+              w.meaningEn.toLowerCase().contains(q),
+        ),
     ];
   }
 
@@ -95,9 +105,7 @@ class AppState extends ChangeNotifier {
     final picked = [...set.words]..shuffle(_random);
     final chosen = picked.take(min(maxQuestions, picked.length));
 
-    return [
-      for (final word in chosen) _buildQuestion(set, word),
-    ];
+    return [for (final word in chosen) _buildQuestion(set, word)];
   }
 
   QuizQuestion _buildQuestion(WordSet set, Word word) {

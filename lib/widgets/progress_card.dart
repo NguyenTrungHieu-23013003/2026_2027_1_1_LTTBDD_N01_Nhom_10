@@ -4,7 +4,6 @@ import '../core/constants/app_spacing.dart';
 import '../core/theme/app_colors.dart';
 import '../l10n/app_localizations.dart';
 
-/// Thẻ gradient xanh hiển thị tiến độ học trong ngày.
 class ProgressCard extends StatelessWidget {
   const ProgressCard({
     super.key,
@@ -46,8 +45,9 @@ class ProgressCard extends StatelessWidget {
                     strokeWidth: 8,
                     strokeCap: StrokeCap.round,
                     backgroundColor: Colors.white24,
-                    valueColor:
-                        const AlwaysStoppedAnimation<Color>(Colors.white),
+                    valueColor: const AlwaysStoppedAnimation<Color>(
+                      Colors.white,
+                    ),
                   ),
                 ),
                 Column(
