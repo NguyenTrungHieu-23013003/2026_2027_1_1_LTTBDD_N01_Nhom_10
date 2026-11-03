@@ -18,6 +18,12 @@
   "wordUnit": "words",
   "searchHint": "Search vocabulary...",
   "searchNoResult": "No results found",
+  "searchResultsCount": "{count} results",
+  "@searchResultsCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
   "wordSetsTitle": "Word sets",
   "setsCount": "{count} sets",
   "@setsCount": {

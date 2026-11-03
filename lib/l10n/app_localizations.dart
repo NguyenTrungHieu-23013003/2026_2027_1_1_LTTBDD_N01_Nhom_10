@@ -176,6 +176,12 @@ abstract class AppLocalizations {
   /// **'Không tìm thấy kết quả'**
   String get searchNoResult;
 
+  /// No description provided for @searchResultsCount.
+  ///
+  /// In vi, this message translates to:
+  /// **'{count} kết quả'**
+  String searchResultsCount(int count);
+
   /// No description provided for @wordSetsTitle.
   ///
   /// In vi, this message translates to:

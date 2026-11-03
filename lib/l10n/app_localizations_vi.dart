@@ -51,6 +51,11 @@ class AppLocalizationsVi extends AppLocalizations {
   String get searchNoResult => 'Không tìm thấy kết quả';
 
   @override
+  String searchResultsCount(int count) {
+    return '$count kết quả';
+  }
+
+  @override
   String get wordSetsTitle => 'Bộ từ vựng';
 
   @override

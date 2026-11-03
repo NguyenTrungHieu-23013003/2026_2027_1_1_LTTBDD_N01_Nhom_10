@@ -51,6 +51,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get searchNoResult => 'No results found';
 
   @override
+  String searchResultsCount(int count) {
+    return '$count results';
+  }
+
+  @override
   String get wordSetsTitle => 'Word sets';
 
   @override

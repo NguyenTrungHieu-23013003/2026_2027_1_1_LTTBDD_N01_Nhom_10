@@ -18,6 +18,12 @@
   "wordUnit": "từ",
   "searchHint": "Tìm từ vựng...",
   "searchNoResult": "Không tìm thấy kết quả",
+  "searchResultsCount": "{count} kết quả",
+  "@searchResultsCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
   "wordSetsTitle": "Bộ từ vựng",
   "setsCount": "{count} bộ từ",
   "@setsCount": {
