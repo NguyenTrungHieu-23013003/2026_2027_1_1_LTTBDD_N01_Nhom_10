@@ -10,6 +10,7 @@ import '../providers/app_state.dart';
 import '../widgets/progress_card.dart';
 import '../widgets/word_set_card.dart';
 import 'set_detail_screen.dart';
+import 'flashcard_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -73,7 +74,16 @@ class _HomeScreenState extends State<HomeScreen> {
                   learned: state.learnedToday,
                   goal: state.dailyGoal,
                   onContinue: () {
-                    // Sẽ nối sang màn Flashcard ở bước sau.
+                    // Mở bộ từ đầu tiên còn từ chưa thuộc.
+                    final target = state.sets.firstWhere(
+                      (s) => s.learnedCount < s.totalCount,
+                      orElse: () => state.sets.first,
+                    );
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (_) => FlashcardScreen(setId: target.id),
+                      ),
+                    );
                   },
                 ),
                 const SizedBox(height: AppSpacing.lg),

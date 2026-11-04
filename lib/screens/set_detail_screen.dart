@@ -7,6 +7,7 @@ import '../l10n/app_localizations.dart';
 import '../models/word.dart';
 import '../providers/app_state.dart';
 import '../widgets/word_tile.dart';
+import 'flashcard_screen.dart';
 
 class SetDetailScreen extends StatelessWidget {
   const SetDetailScreen({super.key, required this.setId});
@@ -51,7 +52,11 @@ class SetDetailScreen extends StatelessWidget {
               children: [
                 Expanded(
                   child: ElevatedButton(
-                    onPressed: () => _showComingSoon(context),
+                    onPressed: () => Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (_) => FlashcardScreen(setId: set.id),
+                      ),
+                    ),
                     child: Text(l10n.learnFlashcard),
                   ),
                 ),
