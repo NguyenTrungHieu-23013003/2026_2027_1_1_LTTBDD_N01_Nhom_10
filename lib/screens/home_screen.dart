@@ -9,6 +9,7 @@ import '../models/word.dart';
 import '../providers/app_state.dart';
 import '../widgets/progress_card.dart';
 import '../widgets/word_set_card.dart';
+import 'set_detail_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -137,9 +138,9 @@ class _HomeScreenState extends State<HomeScreen> {
         WordSetCard(
           set: set,
           languageCode: state.lang,
-          onTap: () {
-            // Sẽ nối sang màn Chi tiết bộ từ ở bước sau.
-          },
+          onTap: () => Navigator.of(context).push(
+            MaterialPageRoute(builder: (_) => SetDetailScreen(setId: set.id)),
+          ),
         ),
         const SizedBox(height: AppSpacing.md),
       ],
@@ -185,7 +186,8 @@ class _ResultTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final setName = state.setOfWord(word)?.name(state.lang) ?? '';
+    final wordSet = state.setOfWord(word);
+    final setName = wordSet?.name(state.lang) ?? '';
 
     return Card(
       child: ListTile(
@@ -223,9 +225,13 @@ class _ResultTile extends StatelessWidget {
           Icons.chevron_right,
           color: AppColors.textSecondary,
         ),
-        onTap: () {
-          // Sẽ nối sang màn Chi tiết bộ từ ở bước sau.
-        },
+        onTap: wordSet == null
+            ? null
+            : () => Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => SetDetailScreen(setId: wordSet.id),
+                ),
+              ),
       ),
     );
   }
