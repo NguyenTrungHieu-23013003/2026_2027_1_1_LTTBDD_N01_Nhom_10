@@ -56,6 +56,32 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String setSummary(int count, int percent) {
+    return '$count words · $percent% learned';
+  }
+
+  @override
+  String get learnFlashcard => 'Study flashcards';
+
+  @override
+  String get takeQuiz => 'Take quiz';
+
+  @override
+  String get wordListTitle => 'Word list';
+
+  @override
+  String get quizNeedFourWords => 'At least 4 words are needed for a quiz';
+
+  @override
+  String get meaningLabel => 'Meaning';
+
+  @override
+  String get exampleLabel => 'Example';
+
+  @override
+  String get comingSoon => 'This feature is coming soon';
+
+  @override
   String get wordSetsTitle => 'Word sets';
 
   @override

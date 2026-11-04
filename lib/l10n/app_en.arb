@@ -24,6 +24,20 @@
       "count": {"type": "int"}
     }
   },
+  "setSummary": "{count} words · {percent}% learned",
+  "@setSummary": {
+    "placeholders": {
+      "count": {"type": "int"},
+      "percent": {"type": "int"}
+    }
+  },
+  "learnFlashcard": "Study flashcards",
+  "takeQuiz": "Take quiz",
+  "wordListTitle": "Word list",
+  "quizNeedFourWords": "At least 4 words are needed for a quiz",
+  "meaningLabel": "Meaning",
+  "exampleLabel": "Example",
+  "comingSoon": "This feature is coming soon",
   "wordSetsTitle": "Word sets",
   "setsCount": "{count} sets",
   "@setsCount": {

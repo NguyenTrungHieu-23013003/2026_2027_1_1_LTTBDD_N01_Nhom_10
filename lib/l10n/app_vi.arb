@@ -24,6 +24,20 @@
       "count": {"type": "int"}
     }
   },
+  "setSummary": "{count} từ · {percent}% đã thuộc",
+  "@setSummary": {
+    "placeholders": {
+      "count": {"type": "int"},
+      "percent": {"type": "int"}
+    }
+  },
+  "learnFlashcard": "Học flashcard",
+  "takeQuiz": "Làm quiz",
+  "wordListTitle": "Danh sách từ",
+  "quizNeedFourWords": "Cần ít nhất 4 từ để làm quiz",
+  "meaningLabel": "Nghĩa",
+  "exampleLabel": "Ví dụ",
+  "comingSoon": "Tính năng đang được phát triển",
   "wordSetsTitle": "Bộ từ vựng",
   "setsCount": "{count} bộ từ",
   "@setsCount": {

@@ -56,6 +56,32 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String setSummary(int count, int percent) {
+    return '$count từ · $percent% đã thuộc';
+  }
+
+  @override
+  String get learnFlashcard => 'Học flashcard';
+
+  @override
+  String get takeQuiz => 'Làm quiz';
+
+  @override
+  String get wordListTitle => 'Danh sách từ';
+
+  @override
+  String get quizNeedFourWords => 'Cần ít nhất 4 từ để làm quiz';
+
+  @override
+  String get meaningLabel => 'Nghĩa';
+
+  @override
+  String get exampleLabel => 'Ví dụ';
+
+  @override
+  String get comingSoon => 'Tính năng đang được phát triển';
+
+  @override
   String get wordSetsTitle => 'Bộ từ vựng';
 
   @override

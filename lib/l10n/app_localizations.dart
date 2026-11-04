@@ -182,6 +182,54 @@ abstract class AppLocalizations {
   /// **'{count} kết quả'**
   String searchResultsCount(int count);
 
+  /// No description provided for @setSummary.
+  ///
+  /// In vi, this message translates to:
+  /// **'{count} từ · {percent}% đã thuộc'**
+  String setSummary(int count, int percent);
+
+  /// No description provided for @learnFlashcard.
+  ///
+  /// In vi, this message translates to:
+  /// **'Học flashcard'**
+  String get learnFlashcard;
+
+  /// No description provided for @takeQuiz.
+  ///
+  /// In vi, this message translates to:
+  /// **'Làm quiz'**
+  String get takeQuiz;
+
+  /// No description provided for @wordListTitle.
+  ///
+  /// In vi, this message translates to:
+  /// **'Danh sách từ'**
+  String get wordListTitle;
+
+  /// No description provided for @quizNeedFourWords.
+  ///
+  /// In vi, this message translates to:
+  /// **'Cần ít nhất 4 từ để làm quiz'**
+  String get quizNeedFourWords;
+
+  /// No description provided for @meaningLabel.
+  ///
+  /// In vi, this message translates to:
+  /// **'Nghĩa'**
+  String get meaningLabel;
+
+  /// No description provided for @exampleLabel.
+  ///
+  /// In vi, this message translates to:
+  /// **'Ví dụ'**
+  String get exampleLabel;
+
+  /// No description provided for @comingSoon.
+  ///
+  /// In vi, this message translates to:
+  /// **'Tính năng đang được phát triển'**
+  String get comingSoon;
+
   /// No description provided for @wordSetsTitle.
   ///
   /// In vi, this message translates to:
