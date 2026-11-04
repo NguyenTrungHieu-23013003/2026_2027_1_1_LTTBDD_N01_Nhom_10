@@ -272,6 +272,150 @@ abstract class AppLocalizations {
   /// **'Quay lại'**
   String get backToSet;
 
+  /// No description provided for @quizQuestionNumber.
+  ///
+  /// In vi, this message translates to:
+  /// **'Câu {current}/{total}'**
+  String quizQuestionNumber(int current, int total);
+
+  /// No description provided for @quizChooseAnswer.
+  ///
+  /// In vi, this message translates to:
+  /// **'Chọn đáp án đúng'**
+  String get quizChooseAnswer;
+
+  /// No description provided for @quizQuestionText.
+  ///
+  /// In vi, this message translates to:
+  /// **'Nghĩa của từ “{word}” là gì?'**
+  String quizQuestionText(String word);
+
+  /// No description provided for @quizCorrect.
+  ///
+  /// In vi, this message translates to:
+  /// **'Chính xác!'**
+  String get quizCorrect;
+
+  /// No description provided for @quizWrong.
+  ///
+  /// In vi, this message translates to:
+  /// **'Chưa đúng'**
+  String get quizWrong;
+
+  /// No description provided for @quizCorrectExplain.
+  ///
+  /// In vi, this message translates to:
+  /// **'“{word}” có nghĩa là “{meaning}”.'**
+  String quizCorrectExplain(String word, String meaning);
+
+  /// No description provided for @quizNext.
+  ///
+  /// In vi, this message translates to:
+  /// **'Tiếp theo'**
+  String get quizNext;
+
+  /// No description provided for @quizFinish.
+  ///
+  /// In vi, this message translates to:
+  /// **'Xem kết quả'**
+  String get quizFinish;
+
+  /// No description provided for @quizExitTitle.
+  ///
+  /// In vi, this message translates to:
+  /// **'Thoát bài quiz?'**
+  String get quizExitTitle;
+
+  /// No description provided for @quizExitMessage.
+  ///
+  /// In vi, this message translates to:
+  /// **'Kết quả của lần làm này sẽ không được lưu.'**
+  String get quizExitMessage;
+
+  /// No description provided for @quizExitConfirm.
+  ///
+  /// In vi, this message translates to:
+  /// **'Thoát'**
+  String get quizExitConfirm;
+
+  /// No description provided for @quizExitCancel.
+  ///
+  /// In vi, this message translates to:
+  /// **'Ở lại'**
+  String get quizExitCancel;
+
+  /// No description provided for @resultTitle.
+  ///
+  /// In vi, this message translates to:
+  /// **'Hoàn thành bài quiz!'**
+  String get resultTitle;
+
+  /// No description provided for @resultMessageHigh.
+  ///
+  /// In vi, this message translates to:
+  /// **'Xuất sắc!'**
+  String get resultMessageHigh;
+
+  /// No description provided for @resultMessageMid.
+  ///
+  /// In vi, this message translates to:
+  /// **'Bạn làm khá tốt'**
+  String get resultMessageMid;
+
+  /// No description provided for @resultMessageLow.
+  ///
+  /// In vi, this message translates to:
+  /// **'Cố gắng thêm nhé'**
+  String get resultMessageLow;
+
+  /// No description provided for @resultScoreUnit.
+  ///
+  /// In vi, this message translates to:
+  /// **'điểm'**
+  String get resultScoreUnit;
+
+  /// No description provided for @resultCorrect.
+  ///
+  /// In vi, this message translates to:
+  /// **'Đúng'**
+  String get resultCorrect;
+
+  /// No description provided for @resultWrong.
+  ///
+  /// In vi, this message translates to:
+  /// **'Sai'**
+  String get resultWrong;
+
+  /// No description provided for @resultTime.
+  ///
+  /// In vi, this message translates to:
+  /// **'Thời gian'**
+  String get resultTime;
+
+  /// No description provided for @resultReviewTitle.
+  ///
+  /// In vi, this message translates to:
+  /// **'Từ cần ôn lại'**
+  String get resultReviewTitle;
+
+  /// No description provided for @resultPerfect.
+  ///
+  /// In vi, this message translates to:
+  /// **'Bạn trả lời đúng tất cả!'**
+  String get resultPerfect;
+
+  /// No description provided for @resultRetry.
+  ///
+  /// In vi, this message translates to:
+  /// **'Làm lại'**
+  String get resultRetry;
+
+  /// No description provided for @resultHome.
+  ///
+  /// In vi, this message translates to:
+  /// **'Về trang chủ'**
+  String get resultHome;
+
   /// No description provided for @wordSetsTitle.
   ///
   /// In vi, this message translates to:

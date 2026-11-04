@@ -51,6 +51,47 @@
   },
   "studyAgain": "Học lại",
   "backToSet": "Quay lại",
+  "quizQuestionNumber": "Câu {current}/{total}",
+  "@quizQuestionNumber": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "quizChooseAnswer": "Chọn đáp án đúng",
+  "quizQuestionText": "Nghĩa của từ “{word}” là gì?",
+  "@quizQuestionText": {
+    "placeholders": {
+      "word": {"type": "String"}
+    }
+  },
+  "quizCorrect": "Chính xác!",
+  "quizWrong": "Chưa đúng",
+  "quizCorrectExplain": "“{word}” có nghĩa là “{meaning}”.",
+  "@quizCorrectExplain": {
+    "placeholders": {
+      "word": {"type": "String"},
+      "meaning": {"type": "String"}
+    }
+  },
+  "quizNext": "Tiếp theo",
+  "quizFinish": "Xem kết quả",
+  "quizExitTitle": "Thoát bài quiz?",
+  "quizExitMessage": "Kết quả của lần làm này sẽ không được lưu.",
+  "quizExitConfirm": "Thoát",
+  "quizExitCancel": "Ở lại",
+  "resultTitle": "Hoàn thành bài quiz!",
+  "resultMessageHigh": "Xuất sắc!",
+  "resultMessageMid": "Bạn làm khá tốt",
+  "resultMessageLow": "Cố gắng thêm nhé",
+  "resultScoreUnit": "điểm",
+  "resultCorrect": "Đúng",
+  "resultWrong": "Sai",
+  "resultTime": "Thời gian",
+  "resultReviewTitle": "Từ cần ôn lại",
+  "resultPerfect": "Bạn trả lời đúng tất cả!",
+  "resultRetry": "Làm lại",
+  "resultHome": "Về trang chủ",
   "wordSetsTitle": "Bộ từ vựng",
   "setsCount": "{count} bộ từ",
   "@setsCount": {

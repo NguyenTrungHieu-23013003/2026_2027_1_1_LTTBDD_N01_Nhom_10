@@ -51,6 +51,47 @@
   },
   "studyAgain": "Study again",
   "backToSet": "Back",
+  "quizQuestionNumber": "Question {current}/{total}",
+  "@quizQuestionNumber": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "quizChooseAnswer": "Choose the correct answer",
+  "quizQuestionText": "What does “{word}” mean?",
+  "@quizQuestionText": {
+    "placeholders": {
+      "word": {"type": "String"}
+    }
+  },
+  "quizCorrect": "Correct!",
+  "quizWrong": "Not quite",
+  "quizCorrectExplain": "“{word}” means “{meaning}”.",
+  "@quizCorrectExplain": {
+    "placeholders": {
+      "word": {"type": "String"},
+      "meaning": {"type": "String"}
+    }
+  },
+  "quizNext": "Next",
+  "quizFinish": "See results",
+  "quizExitTitle": "Quit the quiz?",
+  "quizExitMessage": "This attempt will not be saved.",
+  "quizExitConfirm": "Quit",
+  "quizExitCancel": "Stay",
+  "resultTitle": "Quiz complete!",
+  "resultMessageHigh": "Excellent!",
+  "resultMessageMid": "Nice work",
+  "resultMessageLow": "Keep practicing",
+  "resultScoreUnit": "points",
+  "resultCorrect": "Correct",
+  "resultWrong": "Wrong",
+  "resultTime": "Time",
+  "resultReviewTitle": "Words to review",
+  "resultPerfect": "You got everything right!",
+  "resultRetry": "Try again",
+  "resultHome": "Back to home",
   "wordSetsTitle": "Word sets",
   "setsCount": "{count} sets",
   "@setsCount": {

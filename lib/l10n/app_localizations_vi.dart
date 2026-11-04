@@ -105,6 +105,84 @@ class AppLocalizationsVi extends AppLocalizations {
   String get backToSet => 'Quay lại';
 
   @override
+  String quizQuestionNumber(int current, int total) {
+    return 'Câu $current/$total';
+  }
+
+  @override
+  String get quizChooseAnswer => 'Chọn đáp án đúng';
+
+  @override
+  String quizQuestionText(String word) {
+    return 'Nghĩa của từ “$word” là gì?';
+  }
+
+  @override
+  String get quizCorrect => 'Chính xác!';
+
+  @override
+  String get quizWrong => 'Chưa đúng';
+
+  @override
+  String quizCorrectExplain(String word, String meaning) {
+    return '“$word” có nghĩa là “$meaning”.';
+  }
+
+  @override
+  String get quizNext => 'Tiếp theo';
+
+  @override
+  String get quizFinish => 'Xem kết quả';
+
+  @override
+  String get quizExitTitle => 'Thoát bài quiz?';
+
+  @override
+  String get quizExitMessage => 'Kết quả của lần làm này sẽ không được lưu.';
+
+  @override
+  String get quizExitConfirm => 'Thoát';
+
+  @override
+  String get quizExitCancel => 'Ở lại';
+
+  @override
+  String get resultTitle => 'Hoàn thành bài quiz!';
+
+  @override
+  String get resultMessageHigh => 'Xuất sắc!';
+
+  @override
+  String get resultMessageMid => 'Bạn làm khá tốt';
+
+  @override
+  String get resultMessageLow => 'Cố gắng thêm nhé';
+
+  @override
+  String get resultScoreUnit => 'điểm';
+
+  @override
+  String get resultCorrect => 'Đúng';
+
+  @override
+  String get resultWrong => 'Sai';
+
+  @override
+  String get resultTime => 'Thời gian';
+
+  @override
+  String get resultReviewTitle => 'Từ cần ôn lại';
+
+  @override
+  String get resultPerfect => 'Bạn trả lời đúng tất cả!';
+
+  @override
+  String get resultRetry => 'Làm lại';
+
+  @override
+  String get resultHome => 'Về trang chủ';
+
+  @override
   String get wordSetsTitle => 'Bộ từ vựng';
 
   @override

@@ -8,6 +8,7 @@ import '../models/word.dart';
 import '../providers/app_state.dart';
 import '../widgets/word_tile.dart';
 import 'flashcard_screen.dart';
+import 'quiz_screen.dart';
 
 class SetDetailScreen extends StatelessWidget {
   const SetDetailScreen({super.key, required this.setId});
@@ -63,7 +64,13 @@ class SetDetailScreen extends StatelessWidget {
                 const SizedBox(width: AppSpacing.md),
                 Expanded(
                   child: OutlinedButton(
-                    onPressed: canQuiz ? () => _showComingSoon(context) : null,
+                    onPressed: canQuiz
+                        ? () => Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (_) => QuizScreen(setId: set.id),
+                            ),
+                          )
+                        : null,
                     style: OutlinedButton.styleFrom(
                       minimumSize: const Size.fromHeight(52),
                     ),
@@ -129,12 +136,6 @@ class SetDetailScreen extends StatelessWidget {
       ),
     );
   }
-}
-
-void _showComingSoon(BuildContext context) {
-  final l10n = AppLocalizations.of(context);
-  ScaffoldMessenger.of(context)
-      .showSnackBar(SnackBar(content: Text(l10n.comingSoon)));
 }
 
 /// Bảng trượt từ dưới lên: nghĩa đầy đủ và câu ví dụ.

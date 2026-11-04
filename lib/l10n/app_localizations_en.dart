@@ -105,6 +105,84 @@ class AppLocalizationsEn extends AppLocalizations {
   String get backToSet => 'Back';
 
   @override
+  String quizQuestionNumber(int current, int total) {
+    return 'Question $current/$total';
+  }
+
+  @override
+  String get quizChooseAnswer => 'Choose the correct answer';
+
+  @override
+  String quizQuestionText(String word) {
+    return 'What does “$word” mean?';
+  }
+
+  @override
+  String get quizCorrect => 'Correct!';
+
+  @override
+  String get quizWrong => 'Not quite';
+
+  @override
+  String quizCorrectExplain(String word, String meaning) {
+    return '“$word” means “$meaning”.';
+  }
+
+  @override
+  String get quizNext => 'Next';
+
+  @override
+  String get quizFinish => 'See results';
+
+  @override
+  String get quizExitTitle => 'Quit the quiz?';
+
+  @override
+  String get quizExitMessage => 'This attempt will not be saved.';
+
+  @override
+  String get quizExitConfirm => 'Quit';
+
+  @override
+  String get quizExitCancel => 'Stay';
+
+  @override
+  String get resultTitle => 'Quiz complete!';
+
+  @override
+  String get resultMessageHigh => 'Excellent!';
+
+  @override
+  String get resultMessageMid => 'Nice work';
+
+  @override
+  String get resultMessageLow => 'Keep practicing';
+
+  @override
+  String get resultScoreUnit => 'points';
+
+  @override
+  String get resultCorrect => 'Correct';
+
+  @override
+  String get resultWrong => 'Wrong';
+
+  @override
+  String get resultTime => 'Time';
+
+  @override
+  String get resultReviewTitle => 'Words to review';
+
+  @override
+  String get resultPerfect => 'You got everything right!';
+
+  @override
+  String get resultRetry => 'Try again';
+
+  @override
+  String get resultHome => 'Back to home';
+
+  @override
   String get wordSetsTitle => 'Word sets';
 
   @override
