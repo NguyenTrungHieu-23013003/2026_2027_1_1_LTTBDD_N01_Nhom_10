@@ -82,6 +82,29 @@ class AppLocalizationsVi extends AppLocalizations {
   String get comingSoon => 'Tính năng đang được phát triển';
 
   @override
+  String get tapToFlip => 'Chạm để lật';
+
+  @override
+  String get markNotLearned => 'Chưa thuộc';
+
+  @override
+  String get markLearned => 'Đã thuộc';
+
+  @override
+  String get flashcardDone => 'Hoàn thành bộ thẻ!';
+
+  @override
+  String flashcardDoneSub(int learned, int total) {
+    return 'Bạn đã thuộc $learned/$total từ';
+  }
+
+  @override
+  String get studyAgain => 'Học lại';
+
+  @override
+  String get backToSet => 'Quay lại';
+
+  @override
   String get wordSetsTitle => 'Bộ từ vựng';
 
   @override

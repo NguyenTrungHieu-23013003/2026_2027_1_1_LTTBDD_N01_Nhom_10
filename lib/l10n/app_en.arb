@@ -38,6 +38,19 @@
   "meaningLabel": "Meaning",
   "exampleLabel": "Example",
   "comingSoon": "This feature is coming soon",
+  "tapToFlip": "Tap to flip",
+  "markNotLearned": "Not learned yet",
+  "markLearned": "Learned",
+  "flashcardDone": "Set complete!",
+  "flashcardDoneSub": "You learned {learned}/{total} words",
+  "@flashcardDoneSub": {
+    "placeholders": {
+      "learned": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "studyAgain": "Study again",
+  "backToSet": "Back",
   "wordSetsTitle": "Word sets",
   "setsCount": "{count} sets",
   "@setsCount": {

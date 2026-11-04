@@ -82,6 +82,29 @@ class AppLocalizationsEn extends AppLocalizations {
   String get comingSoon => 'This feature is coming soon';
 
   @override
+  String get tapToFlip => 'Tap to flip';
+
+  @override
+  String get markNotLearned => 'Not learned yet';
+
+  @override
+  String get markLearned => 'Learned';
+
+  @override
+  String get flashcardDone => 'Set complete!';
+
+  @override
+  String flashcardDoneSub(int learned, int total) {
+    return 'You learned $learned/$total words';
+  }
+
+  @override
+  String get studyAgain => 'Study again';
+
+  @override
+  String get backToSet => 'Back';
+
+  @override
   String get wordSetsTitle => 'Word sets';
 
   @override

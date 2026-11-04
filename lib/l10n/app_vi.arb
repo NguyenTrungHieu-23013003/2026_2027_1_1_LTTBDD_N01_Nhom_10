@@ -38,6 +38,19 @@
   "meaningLabel": "Nghĩa",
   "exampleLabel": "Ví dụ",
   "comingSoon": "Tính năng đang được phát triển",
+  "tapToFlip": "Chạm để lật",
+  "markNotLearned": "Chưa thuộc",
+  "markLearned": "Đã thuộc",
+  "flashcardDone": "Hoàn thành bộ thẻ!",
+  "flashcardDoneSub": "Bạn đã thuộc {learned}/{total} từ",
+  "@flashcardDoneSub": {
+    "placeholders": {
+      "learned": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "studyAgain": "Học lại",
+  "backToSet": "Quay lại",
   "wordSetsTitle": "Bộ từ vựng",
   "setsCount": "{count} bộ từ",
   "@setsCount": {

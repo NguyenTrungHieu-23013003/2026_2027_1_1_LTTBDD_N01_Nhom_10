@@ -230,6 +230,48 @@ abstract class AppLocalizations {
   /// **'Tính năng đang được phát triển'**
   String get comingSoon;
 
+  /// No description provided for @tapToFlip.
+  ///
+  /// In vi, this message translates to:
+  /// **'Chạm để lật'**
+  String get tapToFlip;
+
+  /// No description provided for @markNotLearned.
+  ///
+  /// In vi, this message translates to:
+  /// **'Chưa thuộc'**
+  String get markNotLearned;
+
+  /// No description provided for @markLearned.
+  ///
+  /// In vi, this message translates to:
+  /// **'Đã thuộc'**
+  String get markLearned;
+
+  /// No description provided for @flashcardDone.
+  ///
+  /// In vi, this message translates to:
+  /// **'Hoàn thành bộ thẻ!'**
+  String get flashcardDone;
+
+  /// No description provided for @flashcardDoneSub.
+  ///
+  /// In vi, this message translates to:
+  /// **'Bạn đã thuộc {learned}/{total} từ'**
+  String flashcardDoneSub(int learned, int total);
+
+  /// No description provided for @studyAgain.
+  ///
+  /// In vi, this message translates to:
+  /// **'Học lại'**
+  String get studyAgain;
+
+  /// No description provided for @backToSet.
+  ///
+  /// In vi, this message translates to:
+  /// **'Quay lại'**
+  String get backToSet;
+
   /// No description provided for @wordSetsTitle.
   ///
   /// In vi, this message translates to:
