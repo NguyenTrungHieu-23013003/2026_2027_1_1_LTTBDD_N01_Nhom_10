@@ -54,6 +54,19 @@ class AppState extends ChangeNotifier {
     return total / history.length;
   }
 
+  /// Số từ đánh dấu đã thuộc mỗi ngày trong tuần hiện tại (thứ 2 đến chủ nhật).
+  List<int> weekStudyCounts() {
+    final now = DateTime.now();
+    final monday = DateTime(now.year, now.month, now.day - (now.weekday - 1));
+    return [
+      for (var i = 0; i < 7; i++)
+        studyLog[_dayKey(
+              DateTime(monday.year, monday.month, monday.day + i),
+            )] ??
+            0,
+    ];
+  }
+
   WordSet? setById(String id) {
     for (final s in sets) {
       if (s.id == id) return s;

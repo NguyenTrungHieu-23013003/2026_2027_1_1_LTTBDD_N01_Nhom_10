@@ -183,6 +183,30 @@ class AppLocalizationsEn extends AppLocalizations {
   String get resultHome => 'Back to home';
 
   @override
+  String get statsSubtitle => 'Track your learning journey';
+
+  @override
+  String get statLearned => 'Words learned';
+
+  @override
+  String get statQuizzes => 'Quizzes taken';
+
+  @override
+  String get statAverage => 'Average score';
+
+  @override
+  String get chartTitle => 'Words learned per day';
+
+  @override
+  String get recentTitle => 'Recent quiz results';
+
+  @override
+  String get recentEmpty => 'No quiz results yet';
+
+  @override
+  String get weekdayLabels => 'Mon,Tue,Wed,Thu,Fri,Sat,Sun';
+
+  @override
   String get wordSetsTitle => 'Word sets';
 
   @override

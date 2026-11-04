@@ -98,7 +98,7 @@ class _QuizScreenState extends State<QuizScreen> {
     if (!mounted) return;
     if (retry == true) {
       setState(_start);
-    } else {
+    } else if (navigator.canPop()) {
       navigator.pop();
     }
   }

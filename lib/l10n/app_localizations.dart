@@ -416,6 +416,54 @@ abstract class AppLocalizations {
   /// **'Về trang chủ'**
   String get resultHome;
 
+  /// No description provided for @statsSubtitle.
+  ///
+  /// In vi, this message translates to:
+  /// **'Theo dõi hành trình học của bạn'**
+  String get statsSubtitle;
+
+  /// No description provided for @statLearned.
+  ///
+  /// In vi, this message translates to:
+  /// **'Từ đã thuộc'**
+  String get statLearned;
+
+  /// No description provided for @statQuizzes.
+  ///
+  /// In vi, this message translates to:
+  /// **'Quiz đã làm'**
+  String get statQuizzes;
+
+  /// No description provided for @statAverage.
+  ///
+  /// In vi, this message translates to:
+  /// **'Điểm trung bình'**
+  String get statAverage;
+
+  /// No description provided for @chartTitle.
+  ///
+  /// In vi, this message translates to:
+  /// **'Số từ học theo ngày'**
+  String get chartTitle;
+
+  /// No description provided for @recentTitle.
+  ///
+  /// In vi, this message translates to:
+  /// **'Kết quả quiz gần đây'**
+  String get recentTitle;
+
+  /// No description provided for @recentEmpty.
+  ///
+  /// In vi, this message translates to:
+  /// **'Chưa có kết quả quiz nào'**
+  String get recentEmpty;
+
+  /// No description provided for @weekdayLabels.
+  ///
+  /// In vi, this message translates to:
+  /// **'T2,T3,T4,T5,T6,T7,CN'**
+  String get weekdayLabels;
+
   /// No description provided for @wordSetsTitle.
   ///
   /// In vi, this message translates to:

@@ -183,6 +183,30 @@ class AppLocalizationsVi extends AppLocalizations {
   String get resultHome => 'Về trang chủ';
 
   @override
+  String get statsSubtitle => 'Theo dõi hành trình học của bạn';
+
+  @override
+  String get statLearned => 'Từ đã thuộc';
+
+  @override
+  String get statQuizzes => 'Quiz đã làm';
+
+  @override
+  String get statAverage => 'Điểm trung bình';
+
+  @override
+  String get chartTitle => 'Số từ học theo ngày';
+
+  @override
+  String get recentTitle => 'Kết quả quiz gần đây';
+
+  @override
+  String get recentEmpty => 'Chưa có kết quả quiz nào';
+
+  @override
+  String get weekdayLabels => 'T2,T3,T4,T5,T6,T7,CN';
+
+  @override
   String get wordSetsTitle => 'Bộ từ vựng';
 
   @override
