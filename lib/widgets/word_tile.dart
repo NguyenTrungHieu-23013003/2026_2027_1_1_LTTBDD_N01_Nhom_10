@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../core/constants/app_spacing.dart';
 import '../core/theme/app_colors.dart';
 import '../models/word.dart';
+import 'press_effects.dart';
 
 /// Một dòng từ: từ, phiên âm, nghĩa, nút yêu thích và nút đã thuộc.
 class WordTile extends StatelessWidget {
@@ -24,8 +25,8 @@ class WordTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: onTap,
-      child: Padding(
+        onTap: onTap,
+        child: Padding(
         padding: const EdgeInsets.only(
           left: AppSpacing.lg,
           top: AppSpacing.xs,
@@ -78,24 +79,24 @@ class WordTile extends StatelessWidget {
                 ],
               ),
             ),
-            IconButton(
+            PopIconButton(
               onPressed: onToggleFavorite,
+              color: word.isFavorite
+                  ? AppColors.accent
+                  : AppColors.textSecondary,
               icon: Icon(
                 word.isFavorite ? Icons.favorite : Icons.favorite_border,
-                color: word.isFavorite
-                    ? AppColors.accent
-                    : AppColors.textSecondary,
               ),
             ),
-            IconButton(
+            PopIconButton(
               onPressed: onToggleLearned,
+              color: word.isLearned
+                  ? AppColors.success
+                  : AppColors.textSecondary,
               icon: Icon(
                 word.isLearned
                     ? Icons.check_circle_rounded
                     : Icons.check_circle_outline_rounded,
-                color: word.isLearned
-                    ? AppColors.success
-                    : AppColors.textSecondary,
               ),
             ),
           ],

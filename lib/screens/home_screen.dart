@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 
@@ -51,17 +52,38 @@ class _HomeScreenState extends State<HomeScreen> {
           AppSpacing.xl,
         ),
         children: [
-          Text(
-            date,
-            style: const TextStyle(
-              fontSize: 13,
-              color: AppColors.textSecondary,
-            ),
-          ),
-          const SizedBox(height: AppSpacing.xs),
-          Text(
-            l10n.greeting('TH'),
-            style: const TextStyle(fontSize: 26, fontWeight: FontWeight.w700),
+          Row(
+            children: [
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      date,
+                      style: const TextStyle(
+                        fontSize: 13,
+                        color: AppColors.textSecondary,
+                      ),
+                    ),
+                    const SizedBox(height: AppSpacing.xs),
+                    Text(
+                      l10n.greeting('TH'),
+                      style: const TextStyle(
+                        fontSize: 26,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(width: AppSpacing.sm),
+              SvgPicture.asset(
+                'assets/images/Icon.svg',
+                width: 44,
+                height: 44,
+                semanticsLabel: 'WordTH',
+              ),
+            ],
           ),
           const SizedBox(height: AppSpacing.xl),
 

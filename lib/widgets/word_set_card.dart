@@ -23,12 +23,12 @@ class WordSetCard extends StatelessWidget {
     final percent = (set.progress * 100).round();
 
     return Card(
-      clipBehavior: Clip.antiAlias,
-      child: InkWell(
-        onTap: onTap,
-        child: Padding(
-          padding: const EdgeInsets.all(AppSpacing.lg),
-          child: Row(
+        clipBehavior: Clip.antiAlias,
+        child: InkWell(
+          onTap: onTap,
+          child: Padding(
+            padding: const EdgeInsets.all(AppSpacing.lg),
+            child: Row(
             children: [
               Container(
                 width: 48,
@@ -91,9 +91,9 @@ class WordSetCard extends StatelessWidget {
                 ),
               ),
             ],
+            ),
           ),
         ),
-      ),
     );
   }
 }

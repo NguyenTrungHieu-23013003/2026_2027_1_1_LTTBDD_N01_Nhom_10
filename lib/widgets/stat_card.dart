@@ -21,12 +21,12 @@ class StatCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(
-          vertical: AppSpacing.lg,
-          horizontal: AppSpacing.sm,
-        ),
-        child: Column(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(
+            vertical: AppSpacing.lg,
+            horizontal: AppSpacing.sm,
+          ),
+          child: Column(
           children: [
             Container(
               width: 36,
@@ -58,8 +58,8 @@ class StatCard extends StatelessWidget {
               ),
             ),
           ],
+          ),
         ),
-      ),
     );
   }
 }

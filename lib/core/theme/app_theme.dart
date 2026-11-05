@@ -7,6 +7,7 @@ class AppTheme {
   AppTheme._();
 
   static ThemeData light() {
+    final pressOverlay = AppColors.primary.withValues(alpha: 0.12);
     final scheme = ColorScheme.fromSeed(
       seedColor: AppColors.primary,
       primary: AppColors.primary,
@@ -35,15 +36,30 @@ class AppTheme {
         centerTitle: true,
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
-        style: ElevatedButton.styleFrom(
-          backgroundColor: AppColors.primary,
-          foregroundColor: Colors.white,
-          minimumSize: const Size.fromHeight(52),
-          textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(AppRadius.button),
-          ),
-        ),
+        style:
+            ElevatedButton.styleFrom(
+              backgroundColor: AppColors.primary,
+              foregroundColor: Colors.white,
+              minimumSize: const Size.fromHeight(52),
+              textStyle: const TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+              ),
+              animationDuration: const Duration(milliseconds: 140),
+              overlayColor: pressOverlay,
+              elevation: 2,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(AppRadius.button),
+              ),
+            ).copyWith(
+              elevation: WidgetStateProperty.resolveWith<double>((states) {
+                if (states.contains(WidgetState.disabled) ||
+                    states.contains(WidgetState.pressed)) {
+                  return 0;
+                }
+                return states.contains(WidgetState.hovered) ? 4 : 2;
+              }),
+            ),
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
@@ -51,9 +67,23 @@ class AppTheme {
           minimumSize: const Size.fromHeight(48),
           side: const BorderSide(color: AppColors.primary),
           textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+          animationDuration: const Duration(milliseconds: 140),
+          overlayColor: pressOverlay,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(AppRadius.button),
           ),
+        ),
+      ),
+      textButtonTheme: TextButtonThemeData(
+        style: TextButton.styleFrom(
+          animationDuration: const Duration(milliseconds: 140),
+          overlayColor: pressOverlay,
+        ),
+      ),
+      iconButtonTheme: IconButtonThemeData(
+        style: IconButton.styleFrom(
+          animationDuration: const Duration(milliseconds: 140),
+          overlayColor: pressOverlay,
         ),
       ),
       cardTheme: CardThemeData(
@@ -81,11 +111,28 @@ class AppTheme {
           borderSide: const BorderSide(color: AppColors.border),
         ),
       ),
-      navigationBarTheme: const NavigationBarThemeData(
+      navigationBarTheme: NavigationBarThemeData(
         backgroundColor: AppColors.surface,
         indicatorColor: AppColors.primaryLight,
         height: 64,
         surfaceTintColor: Colors.transparent,
+        iconTheme: WidgetStateProperty.resolveWith<IconThemeData?>((states) {
+          return IconThemeData(
+            color: states.contains(WidgetState.selected)
+                ? AppColors.primary
+                : AppColors.textSecondary,
+          );
+        }),
+        labelTextStyle: WidgetStateProperty.resolveWith<TextStyle?>((states) {
+          return TextStyle(
+            color: states.contains(WidgetState.selected)
+                ? AppColors.primary
+                : AppColors.textSecondary,
+            fontWeight: states.contains(WidgetState.selected)
+                ? FontWeight.w600
+                : FontWeight.w400,
+          );
+        }),
       ),
     );
   }

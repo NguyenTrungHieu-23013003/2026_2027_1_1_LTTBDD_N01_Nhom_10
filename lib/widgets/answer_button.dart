@@ -57,62 +57,62 @@ class AnswerButton extends StatelessWidget {
     }
 
     return AnimatedContainer(
-      duration: const Duration(milliseconds: 150),
-      decoration: BoxDecoration(
-        color: background,
-        borderRadius: BorderRadius.circular(AppRadius.button),
-        border: Border.all(color: border, width: 1.5),
-      ),
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
+        duration: const Duration(milliseconds: 150),
+        decoration: BoxDecoration(
+          color: background,
           borderRadius: BorderRadius.circular(AppRadius.button),
-          onTap: onTap,
-          child: Container(
-            constraints: const BoxConstraints(minHeight: 56),
-            padding: const EdgeInsets.symmetric(
-              horizontal: AppSpacing.lg,
-              vertical: AppSpacing.md,
-            ),
-            child: Row(
-              children: [
-                Container(
-                  width: 32,
-                  height: 32,
-                  alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                    color: badgeBackground,
-                    borderRadius: BorderRadius.circular(AppRadius.chip),
-                  ),
-                  child: Text(
-                    letter,
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w700,
-                      color: badgeText,
+          border: Border.all(color: border, width: 1.5),
+        ),
+        child: Material(
+          color: Colors.transparent,
+          child: InkWell(
+            borderRadius: BorderRadius.circular(AppRadius.button),
+            onTap: onTap,
+            child: Container(
+              constraints: const BoxConstraints(minHeight: 56),
+              padding: const EdgeInsets.symmetric(
+                horizontal: AppSpacing.lg,
+                vertical: AppSpacing.md,
+              ),
+              child: Row(
+                children: [
+                  Container(
+                    width: 32,
+                    height: 32,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      color: badgeBackground,
+                      borderRadius: BorderRadius.circular(AppRadius.chip),
+                    ),
+                    child: Text(
+                      letter,
+                      style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w700,
+                        color: badgeText,
+                      ),
                     ),
                   ),
-                ),
-                const SizedBox(width: AppSpacing.md),
-                Expanded(
-                  child: Text(
-                    text,
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w500,
-                      color: textColor,
+                  const SizedBox(width: AppSpacing.md),
+                  Expanded(
+                    child: Text(
+                      text,
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w500,
+                        color: textColor,
+                      ),
                     ),
                   ),
-                ),
-                if (state == AnswerState.correct)
-                  const Icon(Icons.check_rounded, color: AppColors.success),
-                if (state == AnswerState.wrong)
-                  const Icon(Icons.close_rounded, color: AppColors.error),
-              ],
+                  if (state == AnswerState.correct)
+                    const Icon(Icons.check_rounded, color: AppColors.success),
+                  if (state == AnswerState.wrong)
+                    const Icon(Icons.close_rounded, color: AppColors.error),
+                ],
+              ),
             ),
           ),
         ),
-      ),
     );
   }
 }

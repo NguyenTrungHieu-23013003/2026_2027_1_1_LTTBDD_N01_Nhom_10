@@ -67,6 +67,7 @@ class FavoritesScreen extends StatelessWidget {
     if (favorites.isEmpty) {
       return SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             header,
             Expanded(
