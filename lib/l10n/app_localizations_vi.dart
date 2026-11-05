@@ -261,6 +261,23 @@ class AppLocalizationsVi extends AppLocalizations {
   String get membersTitle => 'Thành viên';
 
   @override
+  String favoritesCount(int count) {
+    return '$count từ đã lưu';
+  }
+
+  @override
+  String get favoritesEmptyHint =>
+      'Bấm biểu tượng trái tim ở danh sách từ để lưu từ yêu thích';
+
+  @override
+  String favoritesRemoved(String word) {
+    return 'Đã bỏ “$word” khỏi yêu thích';
+  }
+
+  @override
+  String get undo => 'Hoàn tác';
+
+  @override
   String get wordSetsTitle => 'Bộ từ vựng';
 
   @override

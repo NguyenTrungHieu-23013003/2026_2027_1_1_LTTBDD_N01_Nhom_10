@@ -261,6 +261,23 @@ class AppLocalizationsEn extends AppLocalizations {
   String get membersTitle => 'Members';
 
   @override
+  String favoritesCount(int count) {
+    return '$count saved words';
+  }
+
+  @override
+  String get favoritesEmptyHint =>
+      'Tap the heart icon in a word list to save your favorites';
+
+  @override
+  String favoritesRemoved(String word) {
+    return 'Removed “$word” from favorites';
+  }
+
+  @override
+  String get undo => 'Undo';
+
+  @override
   String get wordSetsTitle => 'Word sets';
 
   @override

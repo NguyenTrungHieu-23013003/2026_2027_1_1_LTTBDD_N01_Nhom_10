@@ -572,6 +572,30 @@ abstract class AppLocalizations {
   /// **'Thành viên'**
   String get membersTitle;
 
+  /// No description provided for @favoritesCount.
+  ///
+  /// In vi, this message translates to:
+  /// **'{count} từ đã lưu'**
+  String favoritesCount(int count);
+
+  /// No description provided for @favoritesEmptyHint.
+  ///
+  /// In vi, this message translates to:
+  /// **'Bấm biểu tượng trái tim ở danh sách từ để lưu từ yêu thích'**
+  String get favoritesEmptyHint;
+
+  /// No description provided for @favoritesRemoved.
+  ///
+  /// In vi, this message translates to:
+  /// **'Đã bỏ “{word}” khỏi yêu thích'**
+  String favoritesRemoved(String word);
+
+  /// No description provided for @undo.
+  ///
+  /// In vi, this message translates to:
+  /// **'Hoàn tác'**
+  String get undo;
+
   /// No description provided for @wordSetsTitle.
   ///
   /// In vi, this message translates to:

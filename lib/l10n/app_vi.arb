@@ -118,6 +118,20 @@
   "githubLabel": "GitHub",
   "githubOpenFailed": "Không mở được liên kết",
   "membersTitle": "Thành viên",
+  "favoritesCount": "{count} từ đã lưu",
+  "@favoritesCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "favoritesEmptyHint": "Bấm biểu tượng trái tim ở danh sách từ để lưu từ yêu thích",
+  "favoritesRemoved": "Đã bỏ “{word}” khỏi yêu thích",
+  "@favoritesRemoved": {
+    "placeholders": {
+      "word": {"type": "String"}
+    }
+  },
+  "undo": "Hoàn tác",
   "wordSetsTitle": "Bộ từ vựng",
   "setsCount": "{count} bộ từ",
   "@setsCount": {

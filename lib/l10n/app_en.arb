@@ -118,6 +118,20 @@
   "githubLabel": "GitHub",
   "githubOpenFailed": "Could not open the link",
   "membersTitle": "Members",
+  "favoritesCount": "{count} saved words",
+  "@favoritesCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "favoritesEmptyHint": "Tap the heart icon in a word list to save your favorites",
+  "favoritesRemoved": "Removed “{word}” from favorites",
+  "@favoritesRemoved": {
+    "placeholders": {
+      "word": {"type": "String"}
+    }
+  },
+  "undo": "Undo",
   "wordSetsTitle": "Word sets",
   "setsCount": "{count} sets",
   "@setsCount": {
