@@ -207,6 +207,60 @@ class AppLocalizationsVi extends AppLocalizations {
   String get weekdayLabels => 'T2,T3,T4,T5,T6,T7,CN';
 
   @override
+  String get settingsSubtitle => 'Cá nhân hóa trải nghiệm học';
+
+  @override
+  String get dailyGoalTitle => 'Mục tiêu học mỗi ngày';
+
+  @override
+  String get dailyGoalSubtitle => 'Duy trì thói quen học đều đặn';
+
+  @override
+  String get aboutTitle => 'Thông tin nhóm';
+
+  @override
+  String get aboutSubtitle => 'Thông tin về dự án WordTH';
+
+  @override
+  String get versionLabel => 'Phiên bản';
+
+  @override
+  String get infoFullName => 'Họ tên';
+
+  @override
+  String get infoStudentId => 'MSSV';
+
+  @override
+  String get infoClass => 'Lớp';
+
+  @override
+  String get infoEmail => 'Email';
+
+  @override
+  String get projectInfoTitle => 'Thông tin dự án';
+
+  @override
+  String get projectTopicLabel => 'Đề tài';
+
+  @override
+  String get projectTopicValue => 'Ứng dụng học từ vựng';
+
+  @override
+  String get projectCourseLabel => 'Môn học';
+
+  @override
+  String get projectCourseValue => 'Lập trình thiết bị di động';
+
+  @override
+  String get githubLabel => 'GitHub';
+
+  @override
+  String get githubOpenFailed => 'Không mở được liên kết';
+
+  @override
+  String get membersTitle => 'Thành viên';
+
+  @override
   String get wordSetsTitle => 'Bộ từ vựng';
 
   @override

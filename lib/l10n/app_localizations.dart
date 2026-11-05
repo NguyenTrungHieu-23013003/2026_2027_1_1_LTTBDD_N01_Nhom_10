@@ -464,6 +464,114 @@ abstract class AppLocalizations {
   /// **'T2,T3,T4,T5,T6,T7,CN'**
   String get weekdayLabels;
 
+  /// No description provided for @settingsSubtitle.
+  ///
+  /// In vi, this message translates to:
+  /// **'Cá nhân hóa trải nghiệm học'**
+  String get settingsSubtitle;
+
+  /// No description provided for @dailyGoalTitle.
+  ///
+  /// In vi, this message translates to:
+  /// **'Mục tiêu học mỗi ngày'**
+  String get dailyGoalTitle;
+
+  /// No description provided for @dailyGoalSubtitle.
+  ///
+  /// In vi, this message translates to:
+  /// **'Duy trì thói quen học đều đặn'**
+  String get dailyGoalSubtitle;
+
+  /// No description provided for @aboutTitle.
+  ///
+  /// In vi, this message translates to:
+  /// **'Thông tin nhóm'**
+  String get aboutTitle;
+
+  /// No description provided for @aboutSubtitle.
+  ///
+  /// In vi, this message translates to:
+  /// **'Thông tin về dự án WordTH'**
+  String get aboutSubtitle;
+
+  /// No description provided for @versionLabel.
+  ///
+  /// In vi, this message translates to:
+  /// **'Phiên bản'**
+  String get versionLabel;
+
+  /// No description provided for @infoFullName.
+  ///
+  /// In vi, this message translates to:
+  /// **'Họ tên'**
+  String get infoFullName;
+
+  /// No description provided for @infoStudentId.
+  ///
+  /// In vi, this message translates to:
+  /// **'MSSV'**
+  String get infoStudentId;
+
+  /// No description provided for @infoClass.
+  ///
+  /// In vi, this message translates to:
+  /// **'Lớp'**
+  String get infoClass;
+
+  /// No description provided for @infoEmail.
+  ///
+  /// In vi, this message translates to:
+  /// **'Email'**
+  String get infoEmail;
+
+  /// No description provided for @projectInfoTitle.
+  ///
+  /// In vi, this message translates to:
+  /// **'Thông tin dự án'**
+  String get projectInfoTitle;
+
+  /// No description provided for @projectTopicLabel.
+  ///
+  /// In vi, this message translates to:
+  /// **'Đề tài'**
+  String get projectTopicLabel;
+
+  /// No description provided for @projectTopicValue.
+  ///
+  /// In vi, this message translates to:
+  /// **'Ứng dụng học từ vựng'**
+  String get projectTopicValue;
+
+  /// No description provided for @projectCourseLabel.
+  ///
+  /// In vi, this message translates to:
+  /// **'Môn học'**
+  String get projectCourseLabel;
+
+  /// No description provided for @projectCourseValue.
+  ///
+  /// In vi, this message translates to:
+  /// **'Lập trình thiết bị di động'**
+  String get projectCourseValue;
+
+  /// No description provided for @githubLabel.
+  ///
+  /// In vi, this message translates to:
+  /// **'GitHub'**
+  String get githubLabel;
+
+  /// No description provided for @githubOpenFailed.
+  ///
+  /// In vi, this message translates to:
+  /// **'Không mở được liên kết'**
+  String get githubOpenFailed;
+
+  /// No description provided for @membersTitle.
+  ///
+  /// In vi, this message translates to:
+  /// **'Thành viên'**
+  String get membersTitle;
+
   /// No description provided for @wordSetsTitle.
   ///
   /// In vi, this message translates to:

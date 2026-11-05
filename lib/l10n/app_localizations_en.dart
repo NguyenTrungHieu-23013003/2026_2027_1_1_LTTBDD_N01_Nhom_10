@@ -207,6 +207,60 @@ class AppLocalizationsEn extends AppLocalizations {
   String get weekdayLabels => 'Mon,Tue,Wed,Thu,Fri,Sat,Sun';
 
   @override
+  String get settingsSubtitle => 'Personalize your learning';
+
+  @override
+  String get dailyGoalTitle => 'Daily goal';
+
+  @override
+  String get dailyGoalSubtitle => 'Build a steady study habit';
+
+  @override
+  String get aboutTitle => 'Team information';
+
+  @override
+  String get aboutSubtitle => 'About the WordTH project';
+
+  @override
+  String get versionLabel => 'Version';
+
+  @override
+  String get infoFullName => 'Full name';
+
+  @override
+  String get infoStudentId => 'Student ID';
+
+  @override
+  String get infoClass => 'Class';
+
+  @override
+  String get infoEmail => 'Email';
+
+  @override
+  String get projectInfoTitle => 'Project information';
+
+  @override
+  String get projectTopicLabel => 'Topic';
+
+  @override
+  String get projectTopicValue => 'Vocabulary learning app';
+
+  @override
+  String get projectCourseLabel => 'Course';
+
+  @override
+  String get projectCourseValue => 'Mobile application development';
+
+  @override
+  String get githubLabel => 'GitHub';
+
+  @override
+  String get githubOpenFailed => 'Could not open the link';
+
+  @override
+  String get membersTitle => 'Members';
+
+  @override
   String get wordSetsTitle => 'Word sets';
 
   @override
