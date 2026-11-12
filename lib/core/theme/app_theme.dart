@@ -2,137 +2,106 @@ import 'package:flutter/material.dart';
 
 import '../constants/app_spacing.dart';
 import 'app_colors.dart';
+import 'app_palette.dart';
 
 class AppTheme {
   AppTheme._();
 
-  static ThemeData light() {
-    final pressOverlay = AppColors.primary.withValues(alpha: 0.12);
+  static ThemeData light() => _build(Brightness.light, AppPalette.light);
+
+  static ThemeData dark() => _build(Brightness.dark, AppPalette.dark);
+
+  static ThemeData _build(Brightness brightness, AppPalette palette) {
+    final isDark = brightness == Brightness.dark;
+
     final scheme = ColorScheme.fromSeed(
       seedColor: AppColors.primary,
-      primary: AppColors.primary,
+      brightness: brightness,
+      // Chế độ tối dùng xanh sáng hơn cho chữ và viền nút để dễ đọc.
+      primary: isDark ? const Color(0xFF6C9BFF) : AppColors.primary,
       secondary: AppColors.accent,
       error: AppColors.error,
-      surface: AppColors.surface,
+      surface: palette.surface,
     );
 
     final base = ThemeData(
       useMaterial3: true,
+      brightness: brightness,
       colorScheme: scheme,
       fontFamily: 'BeVietnamPro',
-      scaffoldBackgroundColor: AppColors.background,
+      scaffoldBackgroundColor: palette.background,
+      extensions: [palette],
     );
 
     return base.copyWith(
       textTheme: base.textTheme.apply(
-        bodyColor: AppColors.textPrimary,
-        displayColor: AppColors.textPrimary,
+        bodyColor: palette.textPrimary,
+        displayColor: palette.textPrimary,
       ),
-      appBarTheme: const AppBarTheme(
-        backgroundColor: AppColors.surface,
-        foregroundColor: AppColors.textPrimary,
+      appBarTheme: AppBarTheme(
+        backgroundColor: palette.surface,
+        foregroundColor: palette.textPrimary,
         elevation: 0,
         scrolledUnderElevation: 0,
         centerTitle: true,
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
-        style:
-            ElevatedButton.styleFrom(
-              backgroundColor: AppColors.primary,
-              foregroundColor: Colors.white,
-              minimumSize: const Size.fromHeight(52),
-              textStyle: const TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w600,
-              ),
-              animationDuration: const Duration(milliseconds: 140),
-              overlayColor: pressOverlay,
-              elevation: 2,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(AppRadius.button),
-              ),
-            ).copyWith(
-              elevation: WidgetStateProperty.resolveWith<double>((states) {
-                if (states.contains(WidgetState.disabled) ||
-                    states.contains(WidgetState.pressed)) {
-                  return 0;
-                }
-                return states.contains(WidgetState.hovered) ? 4 : 2;
-              }),
-            ),
-      ),
-      outlinedButtonTheme: OutlinedButtonThemeData(
-        style: OutlinedButton.styleFrom(
-          foregroundColor: AppColors.primary,
-          minimumSize: const Size.fromHeight(48),
-          side: const BorderSide(color: AppColors.primary),
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.primary,
+          foregroundColor: Colors.white,
+          minimumSize: const Size.fromHeight(52),
           textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-          animationDuration: const Duration(milliseconds: 140),
-          overlayColor: pressOverlay,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(AppRadius.button),
           ),
         ),
       ),
-      textButtonTheme: TextButtonThemeData(
-        style: TextButton.styleFrom(
-          animationDuration: const Duration(milliseconds: 140),
-          overlayColor: pressOverlay,
-        ),
-      ),
-      iconButtonTheme: IconButtonThemeData(
-        style: IconButton.styleFrom(
-          animationDuration: const Duration(milliseconds: 140),
-          overlayColor: pressOverlay,
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(
+          foregroundColor: scheme.primary,
+          minimumSize: const Size.fromHeight(48),
+          side: BorderSide(color: scheme.primary),
+          textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(AppRadius.button),
+          ),
         ),
       ),
       cardTheme: CardThemeData(
-        color: AppColors.surface,
+        color: palette.surface,
         elevation: 0,
         margin: EdgeInsets.zero,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppRadius.card),
-          side: const BorderSide(color: AppColors.border),
+          side: BorderSide(color: palette.border),
         ),
       ),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
-        fillColor: AppColors.surface,
+        fillColor: palette.surface,
         contentPadding: const EdgeInsets.symmetric(
           horizontal: AppSpacing.lg,
           vertical: AppSpacing.md,
         ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(AppRadius.button),
-          borderSide: const BorderSide(color: AppColors.border),
+          borderSide: BorderSide(color: palette.border),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(AppRadius.button),
-          borderSide: const BorderSide(color: AppColors.border),
+          borderSide: BorderSide(color: palette.border),
         ),
       ),
       navigationBarTheme: NavigationBarThemeData(
-        backgroundColor: AppColors.surface,
-        indicatorColor: AppColors.primaryLight,
+        backgroundColor: palette.surface,
+        indicatorColor: palette.primaryLight,
         height: 64,
         surfaceTintColor: Colors.transparent,
-        iconTheme: WidgetStateProperty.resolveWith<IconThemeData?>((states) {
-          return IconThemeData(
-            color: states.contains(WidgetState.selected)
-                ? AppColors.primary
-                : AppColors.textSecondary,
-          );
-        }),
-        labelTextStyle: WidgetStateProperty.resolveWith<TextStyle?>((states) {
-          return TextStyle(
-            color: states.contains(WidgetState.selected)
-                ? AppColors.primary
-                : AppColors.textSecondary,
-            fontWeight: states.contains(WidgetState.selected)
-                ? FontWeight.w600
-                : FontWeight.w400,
-          );
-        }),
+      ),
+      dividerTheme: DividerThemeData(color: palette.border),
+      bottomSheetTheme: BottomSheetThemeData(
+        backgroundColor: palette.surface,
+        surfaceTintColor: Colors.transparent,
       ),
     );
   }

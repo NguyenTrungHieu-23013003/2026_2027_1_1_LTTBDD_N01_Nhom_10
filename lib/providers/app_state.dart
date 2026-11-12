@@ -22,6 +22,7 @@ class AppState extends ChangeNotifier {
 
   Locale _locale = const Locale('vi');
   int _dailyGoal = 20;
+  ThemeMode _themeMode = ThemeMode.light;
 
   // ---------- Cài đặt ----------
   Locale get locale => _locale;
@@ -36,6 +37,14 @@ class AppState extends ChangeNotifier {
 
   void setDailyGoal(int value) {
     _dailyGoal = value.clamp(5, 50);
+    notifyListeners();
+  }
+
+  ThemeMode get themeMode => _themeMode;
+
+  void setThemeMode(ThemeMode mode) {
+    if (mode == _themeMode) return;
+    _themeMode = mode;
     notifyListeners();
   }
 

@@ -596,6 +596,24 @@ abstract class AppLocalizations {
   /// **'Hoàn tác'**
   String get undo;
 
+  /// No description provided for @themeTitle.
+  ///
+  /// In vi, this message translates to:
+  /// **'Giao diện'**
+  String get themeTitle;
+
+  /// No description provided for @themeLight.
+  ///
+  /// In vi, this message translates to:
+  /// **'Sáng'**
+  String get themeLight;
+
+  /// No description provided for @themeDark.
+  ///
+  /// In vi, this message translates to:
+  /// **'Tối'**
+  String get themeDark;
+
   /// No description provided for @wordSetsTitle.
   ///
   /// In vi, this message translates to:

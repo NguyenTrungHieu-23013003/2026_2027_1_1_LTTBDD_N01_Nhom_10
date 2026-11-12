@@ -132,6 +132,9 @@
     }
   },
   "undo": "Undo",
+  "themeTitle": "Appearance",
+  "themeLight": "Light",
+  "themeDark": "Dark",
   "wordSetsTitle": "Word sets",
   "setsCount": "{count} sets",
   "@setsCount": {

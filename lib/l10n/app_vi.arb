@@ -132,6 +132,9 @@
     }
   },
   "undo": "Hoàn tác",
+  "themeTitle": "Giao diện",
+  "themeLight": "Sáng",
+  "themeDark": "Tối",
   "wordSetsTitle": "Bộ từ vựng",
   "setsCount": "{count} bộ từ",
   "@setsCount": {

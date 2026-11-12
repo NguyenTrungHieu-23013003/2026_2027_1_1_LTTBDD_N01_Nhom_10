@@ -278,6 +278,15 @@ class AppLocalizationsVi extends AppLocalizations {
   String get undo => 'Hoàn tác';
 
   @override
+  String get themeTitle => 'Giao diện';
+
+  @override
+  String get themeLight => 'Sáng';
+
+  @override
+  String get themeDark => 'Tối';
+
+  @override
   String get wordSetsTitle => 'Bộ từ vựng';
 
   @override

@@ -29,11 +29,11 @@ class AppInfo {
       email: '23013003@st.phenikaa-uni.edu.vn',
     ),
     Member(
-      fullName: 'Trần Thị B',
-      initials: 'TB',
-      studentId: '22123457',
+      fullName: 'Nguyễn Văn Hiệp',
+      initials: 'NVH',
+      studentId: '23010859',
       className: 'LTTBDD_N01',
-      email: '22123457@st.phenikaa-uni.edu.vn',
+      email: '23010859@st.phenikaa-uni.edu.vn',
     ),
   ];
 

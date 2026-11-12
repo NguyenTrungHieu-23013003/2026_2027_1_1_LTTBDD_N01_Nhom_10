@@ -73,6 +73,48 @@ class SettingsScreen extends StatelessWidget {
           ),
           const SizedBox(height: AppSpacing.lg),
 
+          // ----- Giao diện sáng / tối -----
+          Card(
+            child: Padding(
+              padding: const EdgeInsets.all(AppSpacing.lg),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    l10n.themeTitle.toUpperCase(),
+                    style: const TextStyle(
+                      fontSize: 11,
+                      fontWeight: FontWeight.w600,
+                      letterSpacing: 0.8,
+                      color: AppColors.textSecondary,
+                    ),
+                  ),
+                  const SizedBox(height: AppSpacing.md),
+                  SizedBox(
+                    width: double.infinity,
+                    child: SegmentedButton<ThemeMode>(
+                      showSelectedIcon: false,
+                      segments: [
+                        ButtonSegment(
+                          value: ThemeMode.light,
+                          label: Text(l10n.themeLight),
+                        ),
+                        ButtonSegment(
+                          value: ThemeMode.dark,
+                          label: Text(l10n.themeDark),
+                        ),
+                      ],
+                      selected: {state.themeMode},
+                      onSelectionChanged: (selection) =>
+                          state.setThemeMode(selection.first),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          const SizedBox(height: AppSpacing.lg),
+
           // ----- Mục tiêu học mỗi ngày -----
           Card(
             child: Padding(
